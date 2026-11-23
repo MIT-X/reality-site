@@ -9,7 +9,7 @@
 在 VPS 的 **root 终端**执行，需要已安装 `curl`：
 
 ```bash
-curl -fL https://raw.githubusercontent.com/MIT-X/reality-site/refs/heads/main/reality-site.sh -o /root/reality-site.sh && bash /root/reality-site.sh
+curl -fL https://raw.githubusercontent.com/MIT-X/reality-site/main/reality-site.sh -o /root/reality-site.sh && bash /root/reality-site.sh
 ```
 
 更新或修复本脚本部署的同一站点，也执行上面这条命令。脚本自动完成必要检查，通过后直接询问域名、本机网站端口和可选邮箱；核对计划后输入 `DEPLOY`。
