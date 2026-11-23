@@ -260,8 +260,8 @@ ask_settings() {
     if has getenforce && [[ $(getenforce) == Enforcing ]]; then
         printf 'SELinux 为 Enforcing；会保留此状态。自定义网站端口还需符合本机 SELinux 策略。\n'
     fi
-    read -r -p '确认以上条件并授权此部署，请输入 DEPLOY（其他输入退出）：' answer
-    [[ "$answer" == DEPLOY ]] || { say '已退出。'; exit 0; }
+    read -r -p '确认以上条件并授权此部署，请输入 Y（其他输入退出）：' answer
+    [[ "$answer" == Y ]] || { say '已退出。'; exit 0; }
 }
 
 install_caddy() {
